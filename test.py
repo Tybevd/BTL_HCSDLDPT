@@ -107,11 +107,11 @@ def show_img(image_path):
     cv2.waitKey(0)
 
 input_img = 'img/birds_resized256\Clark_Nutcracker\Clark_Nutcracker_04.jpg'
-# input_img = cv2.imread(input_img)
-# input_img = cv2.resize(input_img, (224,224))
-# top_3 = search_image(input_img)
-# for path, sim in top_3:
-#     print(f'Image: {path}, Similarity: {sim}')
+input_img = cv2.imread(input_img)
+input_img = cv2.resize(input_img, (224,224))
+top_3 = search_image(input_img)
+for path, sim in top_3:
+    print(f'Image: {path}, Similarity: {sim}')
 
 show_img('img/birds_resized256\Red_winged_Blackbird\Red_Winged_Blackbird_0007_3706.jpg')
 
